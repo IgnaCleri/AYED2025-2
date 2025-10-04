@@ -50,11 +50,20 @@ int main() {
     p3 = p1;
 
     // PersonaConst pc;
-    PersonaConst pc = PersonaConst(11, "hola");
-    PersonaConst pc1 = PersonaConst("hola");
+    // PersonaConst pc = PersonaConst(11, "hola");
+    // PersonaConst pc1 = PersonaConst("hola");
     // PersonaConst pc3;
     // pc = pc1;
     // PersonaConst pc2 = pc1;
+
+    Persona per = Persona();
+    Persona* pp = new Persona();
+    per.edad=44;
+    per.nombre ="ana";
+
+    pp->edad = 55;
+    pp->nombre = "pepe";
+    (*pp).edad = 11; // equivalente
 }
 
 void inventario () {
